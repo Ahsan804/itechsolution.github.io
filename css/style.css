@@ -1,13 +1,18 @@
-body{
+* {
   padding: 0;
   margin: 0;
-  font: 15px/1.5 Arial,Helvetica,sans-serif;
+}
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
+  position: relative;
+  padding-bottom: 92px;
+  min-height: 100vh;
 }
 
 /* Container */
 
-.container{
+.container {
   width: 80%;
   margin: auto;
   overflow: hidden;
@@ -15,7 +20,7 @@ body{
 
 /* Button_1*/
 
-.button_1{
+.button_1 {
   height: 38px;
   background: #e8491d;
   padding-left: 20px;
@@ -26,103 +31,102 @@ body{
 
 /* Dark */
 
-.dark{
+.dark {
   margin-top: 10px;
   margin-bottom: 10px;
   background: #35424a;
   color: #fff;
   padding: 15px;
 }
- /* ul */
+/* ul */
 
-ul{
+ul {
   margin: 0;
   padding: 0;
 }
 
 /* Header */
 
-header{
-  background:#35424a;
+header {
+  background: #35424a;
   color: #fff;
   padding-top: 10px;
   min-height: 70px;
   border-bottom: #e8491d 3px solid;
 }
 
-header a{
+header a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
 }
 
-
-header li{
+header li {
   float: left;
   display: inline;
   padding: 0 20px 0 20px;
 }
 
-header #branding{
-  margin-top: 10px;
+header #branding {
+  margin-top: 25px;
   float: left;
 }
 
-
-
-header nav{
+header nav {
   float: right;
   margin-top: 48px;
 }
 
-header .highlight,header .current a{
+header .highlight,
+header .current a {
   color: #e8491d;
   font-weight: bold;
 }
 
-header a:hover{
+header a:hover {
   color: #ccc;
   font-weight: bold;
 }
 
 /* SHOWCASE*/
 
-#showcase{
+#showcase {
   min-height: 400px;
   background: url(../images/showcase.jpg) no-repeat 0 -400px;
   text-align: center;
   color: #fff;
 }
 
-#showcase h1{
+#showcase h1 {
   margin-top: 100px;
   font-size: 55px;
   margin-bottom: 10px;
 }
 
-#showcase p{
+#showcase p {
   font-size: 20px;
 }
 
 /* Newsletter*/
 
-#newsletter{
+#newsletter {
   padding: 10px;
   color: #fff;
-  background:#35424a;
+  background: #35424a;
 }
 
-#newsletter h1{
-  float:  left;
-  }
-
-#newsletter form{
-  float:right;
-  margin-top:20px;
+#newsletter h1 {
+  float: left;
+  margin-top: 20px;
 }
 
-#newsletter input[type="email"]{
+#newsletter form {
+  float: right;
+  margin-top: 20px;
+}
+
+#newsletter input[type="email"] {
   padding: 4px;
   height: 25px;
   width: 250px;
@@ -135,39 +139,43 @@ header a:hover{
   margin-bottom: 60px;
 }
 
-#boxes .box{
+#boxes .box {
   float: left;
   text-align: center;
   width: 30%;
   padding: 10px;
 }
 
-#boxes .box img{
+#boxes .box img {
   width: 90px;
 }
 
 /* Footer */
 
-footer{
+footer {
+  position: absolute;
   font-family: cursive;
   font-size: 15px;
   color: #fff;
   padding: 20px;
-  margin-top: 50px;
+  /* margin-top: 60px; */
   background-color: #e8491d;
   text-align: center;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
 }
 
 /* Main */
 
-article#main-col{
+article#main-col {
   float: left;
   width: 65%;
 }
 
 /* Sidebar */
 
-.sidebar{
+.sidebar {
   float: right;
   margin-top: 10px;
   width: 30%;
@@ -176,17 +184,16 @@ article#main-col{
 
 /* Services */
 
-ul#services li{
+ul#services li {
   list-style: none;
   padding: 20px;
-  margin-bottom:   5px;
+  margin-bottom: 5px;
   border: #ccc solid 1px;
-  background:#e6e6e6;
+  background: #e6e6e6;
 }
 
 /* Icons */
-.icons
-{
+.icons {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
@@ -194,11 +201,11 @@ ul#services li{
   z-index: 100;
 }
 
-.icons ul{
+.icons ul {
   padding: initial;
 }
 
-.icons ul li{
+.icons ul li {
   height: 40px;
   width: 40px;
   list-style-type: none;
@@ -209,29 +216,30 @@ ul#services li{
   background: #000;
 }
 
-.icons ul li.facebook{
+.icons ul li.facebook {
   background: #3b5998;
   font-size: 25px;
 }
 
-.icons ul li.twitter{
+.icons ul li.twitter {
   background: #55acee;
   font-size: 25px;
 }
 
-.icons ul li.instagram{
-  background: #E1306C;
+.icons ul li.instagram {
+  background: #e1306c;
   font-size: 25px;
 }
 
-.icons ul li:hover{
+.icons ul li:hover {
   padding-left: 30px;
   width: 40px;
   transition: 0.3s;
 }
 /* Quote */
 
-.quote input,.quote textarea{
+.quote input,
+.quote textarea {
   width: 90%;
   padding: 5px;
   margin-bottom: 10px;
@@ -239,43 +247,45 @@ ul#services li{
 
 /* Media */
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   header #branding,
-  header nav ,
+  header nav,
   header nav li,
   #newsletter h1,
   #newsletter form,
   #boxes .box,
   article#main-col,
-  .sidebar{
-  float: none;
-  text-align: center;
-  width: 100%;
+  .sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
   }
-  header{
+  header {
     padding-bottom: 20px;
   }
 
-  #showcase h1{
+  #showcase h1 {
     font-size: 45px;
     margin: 5px;
   }
 
-  #newsletter button{
+  #newsletter button {
     display: block;
     width: 100%;
   }
 
-  #newsletter form input[type="email"],.quote input,.quote textarea{
+  #newsletter form input[type="email"],
+  .quote input,
+  .quote textarea {
     width: 100%;
     margin-bottom: 5px;
   }
 
-  .quote{
+  .quote {
     margin-right: 10px;
   }
 
-  .quote button{
+  .quote button {
     display: block;
     width: 80%;
     margin-left: 50px;
@@ -289,8 +299,24 @@ ul#services li{
   }
 }
 
-.immage{
+.immage {
   float: left;
   height: 100px;
   width: 100px;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+  .immage {
+    display: inline;
+    float: left;
+    height: 100px;
+    width: 100px;
+    padding-left: 245px;
+    margin: 0;
+  }
+  #branding {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
